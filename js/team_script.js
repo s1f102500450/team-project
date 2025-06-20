@@ -13,7 +13,6 @@ function displayMemories() {
         const memoryDiv = document.createElement('div');
         memoryDiv.classList.add('memory-item'); // CSSでスタイルを適用するため
 
-        // ***この部分を修正します！***
         memoryDiv.innerHTML = `
             <h3>${memory.name}さんの思い出</h3>
             <p>${memory.memory}</p>
