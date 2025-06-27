@@ -1,0 +1,48 @@
+body{
+    background-color: antiquewhite;
+}
+
+/*ホームタブ*/
+.hometabs {
+  position: fixed;           /* 画面上部に固定 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5); 
+  display: flex;             /* 横並び */
+  align-items: center;
+  z-index: 2;                
+}
+.hometabs a {
+  color: #000000;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-content: center;
+  margin: 48px auto;
+  max-width: 1000px;
+}
+.item {
+  background: #fffde4; 
+  padding: 24px 16px;
+  min-width: 200px;
+  border-radius: 12px;
+}
+.item img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item h2, .item p {
+  text-align: center;
+}
