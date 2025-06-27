@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+}
+
+#memoryForm{
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+#memoriesContainer{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.memory-item{
+    background-color: aqua;
+}
+small{
+    color: rgb(122, 119, 117);
+}
