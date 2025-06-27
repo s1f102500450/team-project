@@ -1,0 +1,46 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*ホームタブ*/
+.hometabs {
+  position: fixed;           /* 画面上部に固定 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5); 
+  display: flex;             /* 横並び */
+  align-items: center;
+  z-index: 2;                /* スライドより前に出す */
+}
+.hometabs a {
+  color: #000000;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/*スライダー*/
+.slides {
+  width: 100%;
+  height: 100%;
+  position: fixed; /* 画面に固定 */
+  z-index: 1; /* 写真のレイヤーを下に */
+}
+.slides img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  object-fit: cover; /* アスペクト比を維持しつつ、要素全体を覆う */
+  opacity: 0;
+  transition: opacity 1s; /* 1秒かけてフワッと切り替わる */
+}
+.slides img.active {
+  opacity: 1; /* 表示状態にする */
+}
+
