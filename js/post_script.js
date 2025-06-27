@@ -14,6 +14,7 @@ function displayMemories() {
         memoryDiv.classList.add('memory-item'); // CSSでスタイルを適用するため
 
         memoryDiv.innerHTML = `
+            <h2>${memory.title}<h2>
             <h3>${memory.name}さんの思い出</h3>
             <p>${memory.memory}</p>
             <small>${memory.timestamp}</small>
@@ -22,15 +23,16 @@ function displayMemories() {
     });
 }
 
-// 他のコード（addEventListener など）はそのまま
 document.getElementById('memoryForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const userName = document.getElementById('userName').value;
     const userMemory = document.getElementById('userMemory').value;
+    const title = document.getElementById('title').value;
 
     const newMemory = {
         name: userName,
+        title: title,
         memory: userMemory,
         timestamp: new Date().toLocaleString()
     };

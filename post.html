@@ -3,7 +3,7 @@
     <head>
         <meta charset = "UTF-8">
         <title>思い出投稿サイト</title>
-
+        <link rel="stylesheet" href="css/post.css">
     </head>
     <body>
         <h1>思い出投稿サイトです</h1>
@@ -12,11 +12,13 @@
         <form id="memoryForm">
             <label for="userName">お名前:</label>
             <input type="text" id="userName" required><br>
+            <label for="title">taitoru:</label>
+            <input type="text" id="title" required><br>
             <label for="userMemory">思い出:</label>
             <textarea id="userMemory" rows="5" required></textarea><br>
             <button type="submit">思い出を投稿する</button>
         </form>
         <div id="memoriesContainer"></div>
-        <script src="js/team_script.js"></script>
+        <script src="js/post_script.js"></script>
     </body>
 </html>
