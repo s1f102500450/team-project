@@ -1,5 +1,8 @@
-html{
-  background-color: antiquewhite;
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff8ec 0%, #ffdd8c 100%);
+  font-family: 'Yu Gothic';
+  padding-top: 5%;
 }
 
 /*ホームタブ*/
@@ -14,7 +17,6 @@ html{
   align-items: center;
   z-index: 2;               
 }
-
 .hometabs a {
   color: #000000;
   padding: 20px;
@@ -22,7 +24,7 @@ html{
 }
 
 h1{
-  margin-top: 100px;
+  padding-left: 10%;
 }
 
 .category{
@@ -33,7 +35,7 @@ h1{
   margin-right: 200px;
   padding: 30px;
   border-radius: 12px;
-  background-color: #edba80;
+  background-color: rgb(255, 250, 243);
 }
 .category a{
   color: #000000;
