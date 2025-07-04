@@ -1,19 +1,74 @@
-body{
-    background-color: antiquewhite;
+body {
+  background: linear-gradient(to bottom, #fff8ec 0%, #ffdd8c 100%);
+  font-family: 'Yu Gothic'
 }
 
+/*ホームタブ*/
+.hometabs {
+  position: fixed;           /* 画面上部に固定 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5); 
+  display: flex;             /* 横並び */
+  align-items: center;
+  z-index: 2;                /* スライドより前に出す */
+}
+.hometabs a {
+  color: #000000;
+  padding: 20px;
+  font-size: 20px;
+}
+
+h1{
+    margin-top: 10%;
+}
+.red{
+    padding-left: 10%;
+}
+
+/*
 #memoryForm{
-    margin: 50px auto;
+    padding-left: 10%;
     max-width: 600px;
+}
+*/
+#memoryForm {
+  background: #fffbe8;
+  border-radius: 14px;
+  padding: 30px 28px 22px 28px;
+  max-width: 420px;
+  margin-left: 10%;
+  border: 1.5px solid #ecd680;
 }
 
 #memoriesContainer{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    padding-right: 10%;
 }
 .memory-item{
-    background-color: aqua;
+    background-color:rgb(255, 250, 243);
+    text-indent: 2em; 
+    border-radius: 13px;
 }
-small{
-    color: rgb(122, 119, 117);
+.memory-item h2{
+    color: #694702;
+}
+.memory-item h3 {
+    font-size: 50%;
+    color: #694702;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.memory-item p {
+  font-size: 1.07em;
+  margin: 7px 0 11px 0;
+  color: #694702;
+}
+.memory-item small {
+  color: #baa76a;
+  font-size: 0.6em;
 }

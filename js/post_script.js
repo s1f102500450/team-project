@@ -15,9 +15,9 @@ function displayMemories() {
 
         memoryDiv.innerHTML = `
             <h2>${memory.title}<h2>
-            <h3>${memory.name}さんの思い出</h3>
+            <h3>${memory.name}さんの思い出</3>
             <p>${memory.memory}</p>
-            <small>${memory.timestamp}</small>
+            <p><small>${memory.timestamp}</small></p>
         `;
         memoriesContainer.appendChild(memoryDiv);
     });
