@@ -35,6 +35,12 @@ body {
   margin-left: 10%;
   border: 1.5px solid #ecd680;
 }
+button[type="submit"] {
+  margin-top: 10px;
+  background-color: #ffdd8c;
+  border: none; 
+  border-radius: 3px;
+}
 
 #memoriesContainer{
     margin-left: 10%;
