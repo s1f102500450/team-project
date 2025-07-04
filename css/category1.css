@@ -1,5 +1,8 @@
 body{
-    background-color: antiquewhite;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff8ec 0%, #ffdd8c 100%);
+  font-family: 'Yu Gothic';
+  padding-top: 5%;
 }
 
 /*ホームタブ*/
@@ -29,7 +32,7 @@ body{
   max-width: 1000px;
 }
 .item {
-  background: #fffde4; 
+  background: rgb(255, 250, 243); 
   padding: 24px 16px;
   min-width: 200px;
   border-radius: 12px;
